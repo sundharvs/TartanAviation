@@ -1,3 +1,6 @@
+# Processed audio files
+audio/processed_audio*
+
 # Folders
 vision/kagc/data/
 
