@@ -151,24 +151,26 @@ elif args.option == 'Sample':
     sample_audio_path = 'kbtp/2020/11/11-02-20_audio'
     download_file_from_bucket(client, bucket_name, args.save_dir, sample_audio_path)
 elif args.option == 'Raw':
-    raw_audio_paths = ['Raw/kbtp/2020/Sept-Oct',
-                      'Raw/kbtp/2020/Nov-Dec',
-                      'Raw/kbtp/2021/Jan-Feb',
-                      'Raw/kbtp/2021/Mar-Apr',
-                      'Raw/kbtp/2021/Nov-Dec',
-                      'Raw/kbtp/2022/Jan-Feb',
-                      'Raw/kbtp/2022/Mar-Apr',
+    raw_audio_paths = [
+                    #   'Raw/kbtp/2020/Sept-Oct',
+                    #   'Raw/kbtp/2020/Nov-Dec',
+                    #   'Raw/kbtp/2021/Jan-Feb',
+                    #   'Raw/kbtp/2021/Mar-Apr',
+                    #   'Raw/kbtp/2021/Nov-Dec',
+                    #   'Raw/kbtp/2022/Jan-Feb',
+                    #   'Raw/kbtp/2022/Mar-Apr',
                       'Raw/kbtp/2022/May-Jun',
                       'Raw/kbtp/2022/Jul-Aug',
-                      'Raw/kbtp/2022/Sept-Oct',
-                      'Raw/kagc/2021/Oct-Dec',
-                      'Raw/kagc/2022/Jan-Feb',
-                      'Raw/kagc/2022/Mar-Apr',
-                      'Raw/kagc/2022/May-Jun',
-                      'Raw/kagc/2022/Jul-Aug',
-                      'Raw/kagc/2022/Sept-Oct',
-                      'Raw/kagc/2022/Nov-Dec',
-                      'Raw/kagc/2023/Jan-Feb']
+                    #   'Raw/kbtp/2022/Sept-Oct',
+                    #   'Raw/kagc/2021/Oct-Dec',
+                    #   'Raw/kagc/2022/Jan-Feb',
+                    #   'Raw/kagc/2022/Mar-Apr',
+                    #   'Raw/kagc/2022/May-Jun',
+                    #   'Raw/kagc/2022/Jul-Aug',
+                    #   'Raw/kagc/2022/Sept-Oct',
+                    #   'Raw/kagc/2022/Nov-Dec',
+                    #   'Raw/kagc/2023/Jan-Feb'
+                    ]
     for audio_path in raw_audio_paths:
         download_raw_folder(client, bucket_name, args.save_dir, audio_path)
 else:
